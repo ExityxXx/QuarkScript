@@ -38,6 +38,6 @@ var auto := "Hi";
 
 # IDE ✒
 - ## Our programming language has its own code editor, you can check it out in the repository
-  - ### Link : [Get-Ide](https://github.com/ExityxXx/QuarkScript/blob/main/Versions/beta-0.1/ide.py)
+  - ### Link : [Ide](https://github.com/ExityxXx/QuarkScript/blob/main/Versions/beta-0.1/ide.py)
 - ## Developed on tkinter
-  - ### Link : TODO LINK 
+  - ### Link : [Tkinter](https://docs.python.org/3/library/tkinter.html)
