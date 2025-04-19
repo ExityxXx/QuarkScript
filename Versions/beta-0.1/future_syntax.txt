@@ -1,0 +1,35 @@
+preload MainStream
+
+var a : Int = 10;
+var b : Float = 50.5;
+var c : Bool = True;
+var d : String = "Hello, World!";
+
+stdout type(a), type(b), type(c), type(d); // Int Float Bool String
+stdout a, b, c, d; // 10 50.5 True "Hello, World!"
+
+func greet(name : String) -> String {
+  return "Hello, " + name;
+}
+
+recurse func factorial(n : Int) -> Int {
+  if n == 1 {
+    return 1
+  };
+  return n * factorial(n - 1);
+}; // Creating for recurse func optimize stack
+
+public class Person extend MainStream {
+  private func Init(this[*args], name : String, age : Int) {
+    this.name = name;
+    this.age = age;
+  };
+  
+  public func get_name -> String => return name;
+  public func get_age -> Int => return age;
+  public func get_info(this) -> String {
+    return "Name: " + this.get_name() + " Age: " + (get_age() -> String);
+  };
+
+
+stdout "End! Bye!", stream=MainStream;
